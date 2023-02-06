@@ -6,28 +6,17 @@ name2 = input("What is their name? \n")
 true = 0
 love = 0
 
-low_name1 = name1.lower()
-low_name2 = name2.lower()
+combined_names = (name1 + name2).lower()
 
-true += low_name1.count("t")
-true += low_name1.count("r")
-true += low_name1.count("u")
-true += low_name1.count("e")
+true += combined_names.count("t")
+true += combined_names.count("r")
+true += combined_names.count("u")
+true += combined_names.count("e")
 
-love += low_name1.count("l")
-love += low_name1.count("o")
-love += low_name1.count("v")
-love += low_name1.count("e")
-
-true += low_name2.count("t")
-true += low_name2.count("r")
-true += low_name2.count("u")
-true += low_name2.count("e")
-
-love += low_name2.count("l")
-love += low_name2.count("o")
-love += low_name2.count("v")
-love += low_name2.count("e")
+love += combined_names.count("l")
+love += combined_names.count("o")
+love += combined_names.count("v")
+love += combined_names.count("e")
 
 score = int(str(true) + str(love))
 
